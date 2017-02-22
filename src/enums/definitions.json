@@ -438,6 +438,16 @@
       }
     ],
     [
+      "SettleDelay",
+      {
+        "nth": 39,
+        "isVLEncoded": false,
+        "isSerialized": true,
+        "isSigningField": true,
+        "type": "UInt32"
+      }
+    ]
+    [
       "IndexNext",
       {
         "nth": 1,
@@ -671,6 +681,16 @@
       "Digest",
       {
         "nth": 21,
+        "isVLEncoded": false,
+        "isSerialized": true,
+        "isSigningField": true,
+        "type": "Hash256"
+      }
+    ],
+    [
+      "Channel",
+      {
+        "nth": 22,
         "isVLEncoded": false,
         "isSerialized": true,
         "isSigningField": true,
@@ -1539,6 +1559,9 @@
     "SuspendedPaymentCreate": 1,
     "SuspendedPaymentFinish": 2,
     "SuspendedPaymentCancel": 4,
+    "PaymentChannelCreate": 13,
+    "PaymentChannelFund": 14,
+    "PaymentChannelClaim": 15,
     "Invalid": -1
   }
 }
